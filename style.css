@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+}
+
+.countdown {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.guest {
+    margin-bottom: 20px;
+}
+
+.confirmation {
+    margin-bottom: 20px;
+}
+
+.confirmation form {
+    text-align: center;
+}
+
+.confirmation input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.confirmation button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.confirmation button:hover {
+    background-color: #45a049;
+}
+
+.color-palette {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.color-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 2px solid #000;
+}
+
+.seating-plan {
+    margin-bottom: 20px;
+}
+
+.seating-plan table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.seating-plan td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.map {
+    margin-bottom: 20px;
+}
+
+.waiting {
+    text-align: center;
+}
