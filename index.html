@@ -3,73 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Свадебное приглашение</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Invite</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1 style="font-family: 'Marck Script', cursive; text-align: center;">Амаль & Севара</h1>
-            <p style="font-family: 'Marck Script', cursive; text-align: center;">суббота, 24 августа 2024</p>
+            <h1>Амаль </br> & </br> Севара </h1>
         </div>
-
-        <div class="countdown">
-            <div id="weeks"></div>
-            <div id="days"></div>
-            <div id="hours"></div>
-            <div id="minutes"></div>
-        </div>
-
-        <div class="guest">
-            <h2 style="font-family: 'Marck Script', cursive; text-align: center;">Дорогой гость</h2>
-            <p style="font-family: 'Marck Script', cursive; text-align: center;">Мы рады сообщить Вам, что 24.08.2024 состоится самое главное торжество в нашей жизни - день нашей свадьбы! Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
-            <p style="font-weight: bold; font-size: 1.2em; text-align: center;">24.08.2024 в 19:00 Asia Palace</p>
-        </div>
-
-        <div class="confirmation">
-            <h3>Подтверждение</h3>
-            <p>Пожалуйста подтвердите свое присутствие:</p>
-            <form action="https://formspree.io/f/mqazaqra" method="POST">
-                <input type="text" name="fullName" placeholder="Введите ваше ФИО" required>
-                <button type="submit">Подтверждаю</button>
-                </form>
-        </div>
-
-        <div class="color-palette">
-            <p>Будем благодарны, если при выборе нарядов на наше торжество вы придержитесь следующей палитры:</p>
-            <div class="color-circle" style="background-color: #FFD700;"></div>
-            <div class="color-circle" style="background-color: #FF69B4;"></div>
-            <div class="color-circle" style="background-color: #00BFFF;"></div>
-            <div class="color-circle" style="background-color: #32CD32;"></div>
-        </div>
-
-        <div class="seating-plan">
-            <h3>Расположение гостей</h3>
-            <!-- Таблица с расположением гостей (заполните сами) -->
-            <table>
-                <!-- Пример первой строки -->
-                <tr>
-                    <td>1. Имя</td>
-                    <td>2. Имя</td>
-                    <td>3. Имя</td>
-                    <!-- Продолжите заполнение -->
-                </tr>
-            </table>
-        </div>
-
-        <div class="map">
-            <h3>Карта</h3>
-            <p>Место проведения: Asia Palace</p>
-            <!-- Google Maps iframe или другой способ отображения карты -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.899061441695!2d69.33343021576842!3d41.3368722149425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x90b7b01c2a780df8!2sAsia%20Palace!5e0!3m2!1sen!2sus!4v1628782028325!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-
-        <div class="waiting">
-            <h3 style="font-family: 'Marck Script', cursive; text-align: center;">Будем ждать вас!</h3>
-        </div>
+    <p class="header__p">Cуббота </br> 24 августа 2024</p>
+    <p class="header__text">Скоро наступит важный день в нашей жизни - мы станем семьей!</p>
+    <div class="countdown">
+        <div id="weeks"></div>
+        <div id="days"></div>
+        <div id="hours"></div>
+        <div id="minutes"></div>
     </div>
 
-    <script src="script.js"></script>
+   
+    <div class="guest">
+        <h2>Дорогой гость</h2>
+        <p class="invite">Мы рады сообщить Вам, что 24.08.2024 состоится самое главное торжество в нашей жизни - день нашей свадьбы! Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
+        <img class="merryme" src="/img/merryme.JPG" alt="">
+        
+    </div>
+
+    <div class="confirmation">
+        <h3>Подтверждение</h3>
+        <p>Пожалуйста подтвердите свое присутствие:</p>
+        <form action="https://formspree.io/f/mqazaqra" method="POST">
+            <input type="text" name="fullName" placeholder="Введите ваши Имя и Фамилие" required>
+            <button type="submit">Подтверждаю</button>
+            </form>
+    </div>
+
+    <div class="color-palette">
+        <h3>Дресс-Код</h3>
+        <p>Для нас главное - ваше присутствие! Но нам будет очень приятно, если вы поддержите стиль торжества в своих нарядах:</p>
+        <div class="color-circle" style="background-color: #000000;"></div>
+        <div class="color-circle" style="background-color: rgb(150, 149, 149);"></div>
+        <div class="color-circle" style="background-color: beige"></div>
+        <div class="color-circle" style="background-color: #93c572;"></div>
+    </div>
+
+  
+
+    <div class="map">
+        <h3>Время и место</h3>
+        <p>Сбор гостей состоится в ресторане <br> "Asia Palace"  в 19.00</p>
+        <!-- Google Maps iframe или другой способ отображения карты -->
+         <p>Так же подготовили для вас карту, чтобы вы точно добрались и порадовали нас своим присутствием</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1497.7975430709257!2d69.33452342025144!3d41.33941746537353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef5b972e2efeb%3A0xbc5faf6cd56eb85e!2sAsia%20Palace!5e0!3m2!1sen!2sus!4v1721935129605!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="waiting">
+        <h3>Будем ждать вас!</h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
